@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- local CSS -->
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/post-page.css">
+    <link rel="stylesheet" href="./style/create-blog-page.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body class="new-post-page">
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col header-container">
+                    <div class="profile-image"></div>
+                    <div class="profile-name text-center">
+                        Create a new post
+                    </div>
+                    <div class="sub-text">
+                        Express your thought independently
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <a href="index.html" class="navigator"> Back </a>
+                    </div>
+
+                    <form>
+                        <div class="form-group">
+                          <label for="post-title">Title</label>
+                          <input type="text" class="form-control" id="post-title" placeholder="Type blog title">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="content">Content</label>
+                          <textarea class="form-control" id="post-content" rows="8"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="post-image"> Choose profile photo </label>
+                            <input type="file" class="form-control-file" id="post-image" accept="image/*">
+                        </div>
+                        
+                        <div class="form-group">
+                            <a type="button" onclick="postData()" id="submit" class="btn btn-primary mb-2">Submit</a>
+                        </div>
+                        
+                    </form> 
+                    
+                </div>
+                 
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made with ❤ by Azizul Bappy</p>
+    </footer>
+
+    <script src="./js/create-blog-page.js"></script>
+</body>
+</html>
